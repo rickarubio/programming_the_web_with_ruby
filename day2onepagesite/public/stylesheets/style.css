@@ -1,0 +1,14 @@
+body {
+  background-color: red;
+}
+p, h1, h2 {
+  color: yellow;
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h1, h2 {
+  border-bottom: 5px solid black;
+}
