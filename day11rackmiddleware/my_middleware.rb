@@ -6,11 +6,13 @@ module MyMiddleware
     end
 
     def call(env)
-      if env['PATH_INFO'] == '/hello'
+      if env['PATH_INFO'] == '/hello' || env['PATH_INFO'] == '/'
         [200, {"Content-Type" => "text/plain"}, ["Hello from the middleware!"]]
       else
         # forward the request
-        @app.call(env)
+        # @app.call(env)
+        # Display 404 page
+        [404, {"Content-Type" => "text/plain"}, ["404 - Not OK!"]]
       end
     end
   end
