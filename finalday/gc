@@ -1,0 +1,6 @@
+--- !ruby/object:GameCharacter
+power: 120
+type: Magician
+weapons:
+- spells
+- invisibility
